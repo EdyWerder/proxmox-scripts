@@ -17,3 +17,12 @@ chmod 700 /root/nut-backup.sh
 ## Run it:
 
 /root/nut-backup.sh
+
+## Inspect the contents without extracting the archive:
+tar -tzf "$(ls -t /root/nut-backup-*.tar.gz | head -1)"
+
+##Extract the archive for inspection
+
+Create a temporary folder and extract the newest backup:
+
+mkdir -p /root/nut-backup-inspect && tar -xzf "$(ls -t /root/nut-backup-*.tar.gz | head -1)" -C /root/nut-backup-inspect
