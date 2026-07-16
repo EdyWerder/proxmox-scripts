@@ -26,3 +26,5 @@ tar -tzf "$(ls -t /root/nut-backup-*.tar.gz | head -1)"
 Create a temporary folder and extract the newest backup:
 
 mkdir -p /root/nut-backup-inspect && tar -xzf "$(ls -t /root/nut-backup-*.tar.gz | head -1)" -C /root/nut-backup-inspect
+
+### Security warning: The archive contains the NUT configuration and may include passwords, SNMP community strings, internal IP addresses, and UPS details. Store it securely and never commit it to a public repository.
