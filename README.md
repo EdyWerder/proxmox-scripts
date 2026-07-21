@@ -15,7 +15,7 @@ and useful diagnostic information.
 
 Checks the active and installed Proxmox kernels.
 
-[View Kernel Check instructions](kernel-check/README.md)
+
 
 Disclaimer:
 
